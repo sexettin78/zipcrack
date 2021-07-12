@@ -1,11 +1,19 @@
-import os
-import pyzipper
+print("\033[92m")
 print('''
-Wordlistiniz var mı 
-(Yok seçeneği işaretlenirse program sizin için oluşturacak)
-1-) Wordlistim var
+     .--------.
+    / .------. 
+   | |        
+  _| |________| |_
+.' |_|        |_| '. Wordlistiniz var mı? 
+'._____ ____ _____.'
+|     .'____'.     | (Yok seçeneği işaretlenirse program sizin için oluşturacak)
+'.__.'.'    '.'.__.'
+'.__  |Sxtool|  __.| 1-) Wordlistim var
+|   '.'.____.'.'   | 
+'.____'.____.'____.' 2-) Wordlistim yok
+'.________________.'
 
-2-) Wordlistim yok
+
 ''')
 aaaas = input("Seç > ")
 
@@ -13,7 +21,7 @@ if(aaaas=="2"):
 	import random 
 	import pyzipper
 	import os
-
+	os.system("pip install pyzipper")
 	chars = input("İçinde olmasını istediğiniz harf rakam sembol vb giriniz: ")
 
 	password_uzunluk = int(input("Ne kadar uzunlukta olsun? "))
